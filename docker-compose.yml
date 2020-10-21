@@ -1,0 +1,15 @@
+version: "3.8"
+  
+services:
+
+  geocodes-gdal:
+    image: osgeo/gdal
+    #entrypoint: /bin/bash
+    volumes:
+      - ./geocodes:/geocodes
+
+  geocodes-postgis:
+    image: postgis/postgis
+    volumes:
+      - ./geocodes:/geocodes
+

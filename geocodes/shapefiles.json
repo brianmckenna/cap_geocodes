@@ -1,0 +1,44 @@
+[
+  {
+    "name": "U.S. Counties - UGC",
+    "url":  "https://www.weather.gov/gis/Counties",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/County/c_03mr20.zip",
+    "sql":  "wkb_geometry, 'US', 'UGC', state||'C'||substring(fips from 3 for 3), countyname"
+  },
+  {
+    "name": "U.S. Counties - FIPS6",
+    "url":  "https://www.weather.gov/gis/Counties",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/County/c_03mr20.zip",
+    "sql":  "wkb_geometry, 'US', 'FIPS6', '0'||fips, countyname"
+  },
+  {
+    "name": "County Warning Area Boundaries - UGC",
+    "url":  "https://www.weather.gov/gis/CWABounds",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/w_03mr20.zip",
+    "sql":  "wkb_geometry, 'US', 'UGC', state||'W'||zone, name"
+  },
+  {
+    "name": "Public Forecast Zones - UGC",
+    "url":  "https://www.weather.gov/gis/PublicZones",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/z_03mr20.zip",
+    "sql":  "wkb_geometry, 'US', 'UGC', state||'Z'||zone, name"
+  },
+  {
+    "name": "Fire Weather Zones",
+    "url":  "https://www.weather.gov/gis/FireZones - UGC",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/fz03mr20.zip",
+    "sql":  "wkb_geometry, 'US', 'UGC', state||'Z'||zone, name"
+  },
+  {
+    "name": "Coastal Marine Zones Including the Great Lakes - UGC",
+    "url":  "https://www.weather.gov/gis/MarineZones",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/mz02ap19.zip",
+    "sql":  "wkb_geometry, 'US', 'UGC', id"
+  },
+  {
+    "name": "Offshore Marine Zones - UGC",
+    "url":  "https://www.weather.gov/gis/MarineZones",
+    "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/oz16ap19.zip",
+    "sql":  "wkb_geometry, 'US', 'UGC', id"
+  }
+]
