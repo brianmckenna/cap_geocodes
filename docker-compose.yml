@@ -4,12 +4,16 @@ services:
 
   geocodes-gdal:
     image: osgeo/gdal
-    #entrypoint: /bin/bash
+    command: /geocodes/geocodes_from_shapefiles.sh
+    entrypoint: /bin/bash
     volumes:
       - ./geocodes:/geocodes
 
   geocodes-postgis:
     image: postgis/postgis
+    environment:
+      - POSTGRES_PASSWORD=ahombera
+    ports:
+      - 5432:5432
     volumes:
       - ./geocodes:/geocodes
-

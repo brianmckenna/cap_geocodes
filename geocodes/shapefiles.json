@@ -33,12 +33,12 @@
     "name": "Coastal Marine Zones Including the Great Lakes - UGC",
     "url":  "https://www.weather.gov/gis/MarineZones",
     "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/mz02ap19.zip",
-    "sql":  "wkb_geometry, 'US', 'UGC', id"
+    "sql":  "wkb_geometry, 'US', 'UGC', id, name"
   },
   {
     "name": "Offshore Marine Zones - UGC",
     "url":  "https://www.weather.gov/gis/MarineZones",
     "shp":  "https://www.weather.gov/source/gis/Shapefiles/WSOM/oz16ap19.zip",
-    "sql":  "wkb_geometry, 'US', 'UGC', id"
+    "sql":  "wkb_geometry, 'US', 'UGC', id, name"
   }
 ]
